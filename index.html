@@ -12,9 +12,436 @@
 </head>
 
 <body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light mb-4 border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                    <i class="fa-solid fa-newspaper me-2"></i> TechTalk Blog
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold text-dark" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-muted" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-muted" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-3">
+                        <a href="#" class="btn btn-dark me-2 fw-semibold">Sign Up</a>
+                        <a href="#" class="btn btn-outline-dark fw-semibold">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Post Header -->
+        <div class="my-4 border-bottom pb-3">
+            <h2 class="fw-bold">Bài viết mới nhất</h2>
+            <p class="text-muted">Cập nhập thông tin mới nhất về công nghệ.</p>
+            <div class="d-flex justify-content-between align-items-center my-3">
+                <div class="input-group w-50">
+                    <span class="input-group-text bg-light border-0">
+                        <i class="fa-solid fa-magnifying-glass text-muted"></i>
+                    </span>
+                    <input type="text" class="form-control border-0 shadow-none" placeholder="Search articles...">
+                </div>
+                <button class="btn btn-dark fw-semibold d-flex align-items-center">
+                    <i class="fa-solid fa-plus me-2"></i> Create New Post
+                </button>
+            </div>
+        </div>
+        <!-- Body: Post List -->
+        <div class="row">
+            <!-- Post List -->
+            <div class="col-sm-8">
+                <div class="row g-4">
+                    <div class="col-sm-4">
+                        <a href="./post-detail.html" class="text-decoration-none text-dark">
+                            <div class="card shadow-sm">
+                                <img src="./images/post/4-lop-bao-mat-api-1024x576.png" class="card-img-top"
+                                    alt="Post 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">JavaScript Là Gì? 10 Năm Kinh Nghiệm Tóm Gọn Trong 3 Phút
+                                    </h5>
+                                    <p class="card-text text-muted">Mô tả ngắn gọn về bài viết 1.</p>
+                                    <div class="d-flex align-items-center border-top pt-2">
+                                        <i class="fa-solid fa-user text-muted me-2"></i>
+                                        <small class="text-muted">Nguyễn Văn A</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="./post-detail.html" class="text-decoration-none text-dark">
+                            <div class="card shadow-sm">
+                                <img src="./images/post/4-lop-bao-mat-api-1024x576.png" class="card-img-top"
+                                    alt="Post 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cách thống trị React, Angular, NodeJS,… để chiến tốt mọi dự
+                                        án
+                                    </h5>
+                                    <p class="card-text text-muted">Mô tả ngắn gọn về bài viết 2.</p>
+                                    <div class="d-flex align-items-center border-top pt-2">
+                                        <i class="fa-solid fa-user text-muted me-2"></i>
+                                        <small class="text-muted">Trần Thị B</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="./post-detail.html" class="text-decoration-none text-dark">
+                            <div class="card shadow-sm">
+                                <img src="./images/post/4-lop-bao-mat-api-1024x576.png" class="card-img-top"
+                                    alt="Post 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tất Tần Tật Về Git Flow Trong 3 Phút – Tự Học Siêu Tốc</h5>
+                                    <p class="card-text text-muted">Mô tả ngắn gọn về bài viết 3.</p>
+                                    <div class="d-flex align-items-center border-top pt-2">
+                                        <i class="fa-solid fa-user text-muted me-2"></i>
+                                        <small class="text-muted">Lê Văn C</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="./post-detail.html" class="text-decoration-none text-dark">
+                            <div class="card shadow-sm">
+                                <img src="./images/post/4-lop-bao-mat-api-1024x576.png" class="card-img-top"
+                                    alt="Post 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">JavaScript Là Gì? 10 Năm Kinh Nghiệm Tóm Gọn Trong 3 Phút
+                                    </h5>
+                                    <p class="card-text text-muted">Mô tả ngắn gọn về bài viết 1.</p>
+                                    <div class="d-flex align-items-center border-top pt-2">
+                                        <i class="fa-solid fa-user text-muted me-2"></i>
+                                        <small class="text-muted">Nguyễn Văn A</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="./post-detail.html" class="text-decoration-none text-dark">
+                            <div class="card shadow-sm">
+                                <img src="./images/post/4-lop-bao-mat-api-1024x576.png" class="card-img-top"
+                                    alt="Post 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cách thống trị React, Angular, NodeJS,… để chiến tốt mọi dự
+                                        án
+                                    </h5>
+                                    <p class="card-text text-muted">Mô tả ngắn gọn về bài viết 2.</p>
+                                    <div class="d-flex align-items-center border-top pt-2">
+                                        <i class="fa-solid fa-user text-muted me-2"></i>
+                                        <small class="text-muted">Trần Thị B</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="./post-detail.html" class="text-decoration-none text-dark">
+                            <div class="card shadow-sm">
+                                <img src="./images/post/4-lop-bao-mat-api-1024x576.png" class="card-img-top"
+                                    alt="Post 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cách thống trị React, Angular, NodeJS,… để chiến tốt mọi dự
+                                        án
+                                    </h5>
+                                    <p class="card-text text-muted">Mô tả ngắn gọn về bài viết 2.</p>
+                                    <div class="d-flex align-items-center border-top pt-2">
+                                        <i class="fa-solid fa-user text-muted me-2"></i>
+                                        <small class="text-muted">Trần Thị B</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="./post-detail.html" class="text-decoration-none text-dark">
+                            <div class="card shadow-sm">
+                                <img src="./images/post/4-lop-bao-mat-api-1024x576.png" class="card-img-top"
+                                    alt="Post 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cách thống trị React, Angular, NodeJS,… để chiến tốt mọi dự
+                                        án
+                                    </h5>
+                                    <p class="card-text text-muted">Mô tả ngắn gọn về bài viết 2.</p>
+                                    <div class="d-flex align-items-center border-top pt-2">
+                                        <i class="fa-solid fa-user text-muted me-2"></i>
+                                        <small class="text-muted">Trần Thị B</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="./post-detail.html" class="text-decoration-none text-dark">
+                            <div class="card shadow-sm">
+                                <img src="./images/post/4-lop-bao-mat-api-1024x576.png" class="card-img-top"
+                                    alt="Post 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cách thống trị React, Angular, NodeJS,… để chiến tốt mọi dự
+                                        án
+                                    </h5>
+                                    <p class="card-text text-muted">Mô tả ngắn gọn về bài viết 2.</p>
+                                    <div class="d-flex align-items-center border-top pt-2">
+                                        <i class="fa-solid fa-user text-muted me-2"></i>
+                                        <small class="text-muted">Trần Thị B</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="./post-detail.html" class="text-decoration-none text-dark">
+                            <div class="card shadow-sm">
+                                <img src="./images/post/4-lop-bao-mat-api-1024x576.png" class="card-img-top"
+                                    alt="Post 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tất Tần Tật Về Git Flow Trong 3 Phút – Tự Học Siêu Tốc</h5>
+                                    <p class="card-text text-muted">Mô tả ngắn gọn về bài viết 3.</p>
+                                    <div class="d-flex align-items-center border-top pt-2">
+                                        <i class="fa-solid fa-user text-muted me-2"></i>
+                                        <small class="text-muted">Lê Văn C</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
+                </div>
+                <!-- Pagination -->
+                <nav aria-label="Page navigation" class="mt-4">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link border-0 bg-transparent text-muted shadow-none" href="#"
+                                aria-label="Previous">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link rounded-circle text-white bg-dark border-0 shadow-none" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link border-0 bg-transparent text-dark shadow-none" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link border-0 bg-transparent text-dark shadow-none" href="#">3</a>
+                        </li>
+                        <li class="page-item disabled">
+                            <span class="page-link border-0 bg-transparent text-muted">...</span>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link border-0 bg-transparent text-dark shadow-none" href="#">8</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link border-0 bg-transparent text-dark shadow-none" href="#">9</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link border-0 bg-transparent text-dark shadow-none" href="#">10</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link border-0 bg-transparent text-muted shadow-none" href="#"
+                                aria-label="Next">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Sidebar -->
+            <div class="col-sm-4">
+                <div class="p-3 bg-light border rounded">
+                    <h5 class="fw-bold">Bài viết nổi bật</h5>
+                    <ul class="nav nav-tabs" id="featuredPostTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="day-tab" data-bs-toggle="tab" data-bs-target="#day"
+                                type="button" role="tab" aria-controls="day" aria-selected="true">Ngày</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="week-tab" data-bs-toggle="tab" data-bs-target="#week"
+                                type="button" role="tab" aria-controls="week" aria-selected="false">Tuần</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="month-tab" data-bs-toggle="tab" data-bs-target="#month"
+                                type="button" role="tab" aria-controls="month" aria-selected="false">Tháng</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content border border-top-0 p-3" id="featuredPostTabContent">
+                        <!-- Ngày -->
+                        <div class="tab-pane fade show active" id="day" role="tabpanel" aria-labelledby="day-tab">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">JavaScript Là Gì? 10 Năm Kinh Nghiệm Tóm Gọn Trong 3
+                                            Phút</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Cách thống trị React, Angular, NodeJS,… để chiến tốt
+                                            mọi dự án</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Tất Tần Tật Về Git Flow Trong 3 Phút – Tự Học Siêu Tốc
+                                        </h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Học Vue.js Cơ Bản Trong 7 Ngày</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Tổng Quan Về Node.js – Hướng Dẫn Cho Người Mới</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Tuần -->
+                        <div class="tab-pane fade" id="week" role="tabpanel" aria-labelledby="week-tab">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Cách Làm Chủ Git Trong 30 Ngày</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 02/01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Học React.js Từ Cơ Bản Đến Nâng Cao</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 03/01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Tìm Hiểu Về RESTful API</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 04/01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Tự Học TypeScript Trong 7 Ngày</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 05/01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Tối Ưu Hóa Hiệu Suất Website</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 06/01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Tháng -->
+                        <div class="tab-pane fade" id="month" role="tabpanel" aria-labelledby="month-tab">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Hướng Dẫn Sử Dụng Docker Cho Người Mới</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Tìm Hiểu Về CI/CD Pipeline</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Cách Tạo Blog Cá Nhân Với Gatsby.js</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Tìm Hiểu Về WebSocket</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
+                                        <h6 class="fw-bold mb-1">Học Lập Trình Python Từ Cơ Bản</h6>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/2023
+                                        </small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="my-5">
+            <hr class="text-muted mb-4">
+            <nav class="nav justify-content-center mb-3">
+                <a class="nav-link px-3 text-muted" href="#">Privacy Policy</a>
+                <a class="nav-link px-3 text-muted" href="#">Terms of Service</a>
+                <a class="nav-link px-3 text-muted" href="#">About</a>
+                <a class="nav-link px-3 text-muted" href="#">Contact</a>
+            </nav>
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="#" class="text-muted"><i class="fa-brands fa-facebook fs-5"></i></a>
+                <a href="#" class="text-muted"><i class="fa-brands fa-twitter fs-5"></i></a>
+                <a href="#" class="text-muted"><i class="fa-brands fa-linkedin fs-5"></i></a>
+            </div>
+            <p class="text-center text-muted small mb-0">© 2025 TechTalk Blog</p>
+        </footer>
+    </div>
     <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 </body>
 
 </html>
