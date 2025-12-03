@@ -29,6 +29,9 @@
                             <a class="nav-link active fw-semibold text-dark" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link fw-semibold text-muted" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link fw-semibold text-muted" href="#">About</a>
                         </li>
                         <li class="nav-item">
@@ -36,8 +39,8 @@
                         </li>
                     </ul>
                     <div class="d-flex ms-3">
-                        <a href="#" class="btn btn-dark me-2 fw-semibold">Sign Up</a>
-                        <a href="#" class="btn btn-outline-dark fw-semibold">Sign In</a>
+                        <a href="#" class="btn btn-outline-dark fw-semibold me-2">Sign Up</a>
+                        <a href="#" class="btn btn-dark fw-semibold">Sign In</a>
                     </div>
                 </div>
             </div>
@@ -262,158 +265,130 @@
             </div>
             <!-- Sidebar -->
             <div class="col-sm-4">
-                <div class="p-3 bg-light border rounded">
-                    <h5 class="fw-bold">Bài viết nổi bật</h5>
-                    <ul class="nav nav-tabs" id="featuredPostTab" role="tablist">
+                <div class="bg-white border rounded p-0">
+                    <div class="p-3 pb-0">
+                        <h5 class="fw-bold mb-3">Bài viết nổi bật</h5>
+                    </div>
+                    <ul class="nav nav-tabs px-3" id="featuredPostTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="day-tab" data-bs-toggle="tab" data-bs-target="#day"
-                                type="button" role="tab" aria-controls="day" aria-selected="true">Ngày</button>
+                            <button class="nav-link active text-muted fw-semibold" id="day-tab" data-bs-toggle="tab"
+                                data-bs-target="#day" type="button" role="tab" aria-controls="day"
+                                aria-selected="true">Ngày</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="week-tab" data-bs-toggle="tab" data-bs-target="#week"
-                                type="button" role="tab" aria-controls="week" aria-selected="false">Tuần</button>
+                            <button class="nav-link text-muted fw-semibold" id="week-tab" data-bs-toggle="tab"
+                                data-bs-target="#week" type="button" role="tab" aria-controls="week"
+                                aria-selected="false">Tuần</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="month-tab" data-bs-toggle="tab" data-bs-target="#month"
-                                type="button" role="tab" aria-controls="month" aria-selected="false">Tháng</button>
+                            <button class="nav-link text-muted fw-semibold" id="month-tab" data-bs-toggle="tab"
+                                data-bs-target="#month" type="button" role="tab" aria-controls="month"
+                                aria-selected="false">Tháng</button>
                         </li>
                     </ul>
-                    <div class="tab-content border border-top-0 p-3" id="featuredPostTabContent">
+                    <div class="tab-content p-0" id="featuredPostTabContent">
                         <!-- Ngày -->
                         <div class="tab-pane fade show active" id="day" role="tabpanel" aria-labelledby="day-tab">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">JavaScript Là Gì? 10 Năm Kinh Nghiệm Tóm Gọn Trong 3
-                                            Phút</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/01/2023
-                                        </small>
-                                    </a>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">JavaScript
+                                        Là Gì? 10 Năm Kinh Nghiệm Tóm Gọn Trong 3 Phút</a>
+                                    <small class="text-muted d-block">01/01/2023</small>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Cách thống trị React, Angular, NodeJS,… để chiến tốt
-                                            mọi dự án</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/01/2023
-                                        </small>
-                                    </a>
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Cách
+                                        thống trị React, Angular, NodeJS,… để chiến tốt mọi dự án</a>
+                                    <small class="text-muted d-block">01/01/2023</small>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Tất Tần Tật Về Git Flow Trong 3 Phút – Tự Học Siêu Tốc
-                                        </h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/01/2023
-                                        </small>
-                                    </a>
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Tất Tần
+                                        Tật Về Git Flow Trong 3 Phút – Tự Học Siêu Tốc</a>
+                                    <small class="text-muted d-block">01/01/2023</small>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Học Vue.js Cơ Bản Trong 7 Ngày</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/01/2023
-                                        </small>
-                                    </a>
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Học
+                                        Vue.js Cơ Bản Trong 7 Ngày</a>
+                                    <small class="text-muted d-block">01/01/2023</small>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Tổng Quan Về Node.js – Hướng Dẫn Cho Người Mới</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/01/2023
-                                        </small>
-                                    </a>
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Tổng
+                                        Quan Về Node.js – Hướng Dẫn Cho Người Mới</a>
+                                    <small class="text-muted d-block">01/01/2023</small>
                                 </li>
                             </ul>
                         </div>
                         <!-- Tuần -->
                         <div class="tab-pane fade" id="week" role="tabpanel" aria-labelledby="week-tab">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Cách Làm Chủ Git Trong 30 Ngày</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 02/01/2023
-                                        </small>
-                                    </a>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">JavaScript
+                                        Là Gì? 10 Năm Kinh Nghiệm Tóm Gọn Trong 3 Phút</a>
+                                    <small class="text-muted d-block">01/01/2023</small>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Học React.js Từ Cơ Bản Đến Nâng Cao</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 03/01/2023
-                                        </small>
-                                    </a>
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Cách
+                                        thống trị React, Angular, NodeJS,… để chiến tốt mọi dự án</a>
+                                    <small class="text-muted d-block">01/01/2023</small>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Tìm Hiểu Về RESTful API</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 04/01/2023
-                                        </small>
-                                    </a>
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Tất Tần
+                                        Tật Về Git Flow Trong 3 Phút – Tự Học Siêu Tốc</a>
+                                    <small class="text-muted d-block">01/01/2023</small>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Tự Học TypeScript Trong 7 Ngày</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 05/01/2023
-                                        </small>
-                                    </a>
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Học
+                                        Vue.js Cơ Bản Trong 7 Ngày</a>
+                                    <small class="text-muted d-block">01/01/2023</small>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Tối Ưu Hóa Hiệu Suất Website</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 06/01/2023
-                                        </small>
-                                    </a>
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Tổng
+                                        Quan Về Node.js – Hướng Dẫn Cho Người Mới</a>
+                                    <small class="text-muted d-block">01/01/2023</small>
                                 </li>
                             </ul>
                         </div>
                         <!-- Tháng -->
                         <div class="tab-pane fade" id="month" role="tabpanel" aria-labelledby="month-tab">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Hướng Dẫn Sử Dụng Docker Cho Người Mới</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/2023
-                                        </small>
-                                    </a>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Hướng
+                                        Dẫn Sử Dụng Docker Cho Người Mới</a>
+                                    <small class="text-muted d-block">01/2023</small>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Tìm Hiểu Về CI/CD Pipeline</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/2023
-                                        </small>
-                                    </a>
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Tìm
+                                        Hiểu Về CI/CD Pipeline</a>
+                                    <small class="text-muted d-block">01/2023</small>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Cách Tạo Blog Cá Nhân Với Gatsby.js</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/2023
-                                        </small>
-                                    </a>
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Cách
+                                        Tạo Blog Cá Nhân Với Gatsby.js</a>
+                                    <small class="text-muted d-block">01/2023</small>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Tìm Hiểu Về WebSocket</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/2023
-                                        </small>
-                                    </a>
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Tìm
+                                        Hiểu Về WebSocket</a>
+                                    <small class="text-muted d-block">01/2023</small>
                                 </li>
-                                <li class="list-group-item">
-                                    <a href="./post-detail.html" class="text-decoration-none text-dark">
-                                        <h6 class="fw-bold mb-1">Học Lập Trình Python Từ Cơ Bản</h6>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-calendar-days me-1"></i> 01/2023
-                                        </small>
-                                    </a>
+                                <li class="list-group-item py-2">
+                                    <a href="./post-detail.html"
+                                        class="d-block text-decoration-none text-dark fw-semibold text-truncate">Học Lập
+                                        Trình Python Từ Cơ Bản</a>
+                                    <small class="text-muted d-block">01/2023</small>
                                 </li>
                             </ul>
                         </div>
