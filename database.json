@@ -1,0 +1,294 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Nhat Duy",
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "bio": "Full-stack developer với 5 năm kinh nghiệm. Đam mê JavaScript và Vue.js.",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Cam Tien",
+      "email": "user@gmail.com",
+      "password": "123456",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "bio": "Frontend developer, yêu thích thiết kế UI/UX và Bootstrap.",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "name": "Chau Nhat Duy",
+      "email": "chaunhatduy@gmail.com",
+      "password": "123456",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "bio": "I'm a developer. You can call me 'Dyu'.",
+      "role": "admin"
+    },
+    {
+      "id": "4",
+      "name": "Alex Doe",
+      "email": "alexdoe@gmail.com",
+      "password": "123456",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "bio": "Tech writer and web development enthusiast.",
+      "role": "user"
+    },
+    {
+      "id": "fdea",
+      "name": "Nhat Duy",
+      "email": "duy@gmail.com",
+      "password": "123456",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "bio": "",
+      "role": "user"
+    },
+    {
+      "id": "e21d",
+      "name": "BInh",
+      "email": "binh@gmail.com",
+      "password": "227206",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "bio": "",
+      "role": "user"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "JavaScript Là Gì? 10 Năm Kinh Nghiệm",
+      "author": "Nhat Duy",
+      "content": "Học JavaScript từ cơ bản đến nâng cao",
+      "image": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=800",
+      "createdAt": "2024-10-15T10:30:00Z",
+      "updatedAt": "2024-10-15T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "title": "Cách thống trị React, Angular, NodeJS",
+      "author": "Cam Tien",
+      "content": "Framework hiện đại cho web development",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800",
+      "createdAt": "2024-10-18T14:20:00Z",
+      "updatedAt": "2024-10-18T14:20:00Z"
+    },
+    {
+      "id": "4",
+      "title": "Vue 3 Composition API từ Zero - Hero",
+      "author": "Nhat Duy",
+      "content": "Code Vue 3 dễ đọc và dễ maintain hơn",
+      "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800",
+      "createdAt": "2024-11-02T11:45:00Z",
+      "updatedAt": "2025-12-13T04:27:48.760Z"
+    },
+    {
+      "id": "5",
+      "title": "Node.js Best Practices 2024",
+      "author": "Chau Nhat Duy",
+      "content": "Bảo mật và tối ưu hiệu suất Node.js",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
+      "createdAt": "2024-11-05T15:30:00Z",
+      "updatedAt": "2024-11-05T15:30:00Z"
+    },
+    {
+      "id": "6",
+      "title": "CSS Grid vs Flexbox - So Sánh Chi Tiết",
+      "author": "Cam Tien",
+      "content": "Chọn công cụ layout phù hợp cho dự án",
+      "image": "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?w=800",
+      "createdAt": "2024-11-08T08:20:00Z",
+      "updatedAt": "2024-11-08T08:20:00Z"
+    },
+    {
+      "id": "7",
+      "title": "TypeScript cho người mới bắt đầu",
+      "author": "Alex Doe",
+      "content": "Type safety giúp code ít bug hơn",
+      "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800",
+      "createdAt": "2024-11-12T10:00:00Z",
+      "updatedAt": "2024-11-12T10:00:00Z"
+    },
+    {
+      "id": "8",
+      "title": "Git & GitHub: Làm việc nhóm hiệu quả",
+      "author": "Nhat Duy",
+      "content": "Quản lý code và cộng tác trong team",
+      "image": "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=800",
+      "createdAt": "2024-11-15T14:30:00Z",
+      "updatedAt": "2024-11-15T14:30:00Z"
+    },
+    {
+      "id": "9",
+      "title": "REST API Design: Chuẩn RESTful 2024",
+      "author": "Chau Nhat Duy",
+      "content": "Thiết kế API dễ sử dụng và mở rộng",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
+      "createdAt": "2024-11-18T09:45:00Z",
+      "updatedAt": "2024-11-18T09:45:00Z"
+    },
+    {
+      "id": "10",
+      "title": "MongoDB: Database NoSQL phổ biến nhất",
+      "author": "Cam Tien",
+      "content": "Lưu trữ dữ liệu linh hoạt với MongoDB",
+      "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800",
+      "createdAt": "2024-11-20T16:20:00Z",
+      "updatedAt": "2024-11-20T16:20:00Z"
+    },
+    {
+      "id": "11",
+      "title": "Docker: Container hóa ứng dụng",
+      "author": "Alex Doe",
+      "content": "Deploy app dễ dàng với Docker container",
+      "image": "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=800",
+      "createdAt": "2024-11-22T11:10:00Z",
+      "updatedAt": "2024-11-22T11:10:00Z"
+    },
+    {
+      "id": "12",
+      "title": "React Hooks: useState và useEffect",
+      "author": "Nhat Duy",
+      "content": "Quản lý state trong React functional component",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800",
+      "createdAt": "2024-11-25T13:40:00Z",
+      "updatedAt": "2024-11-25T13:40:00Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "postId": null,
+      "author": "Cam Tien",
+      "content": "Great article! Really looking forward to ditching jQuery for good.",
+      "createdAt": "2024-10-27T14:30:00Z"
+    },
+    {
+      "id": "2",
+      "postId": null,
+      "author": "Nhat Duy",
+      "content": "The utility API is a game-changer. Thanks for the detailed breakdown.",
+      "createdAt": "2024-10-26T18:45:00Z"
+    },
+    {
+      "id": "3",
+      "postId": "1",
+      "author": "Alex Doe",
+      "content": "Rất hữu ích cho người mới bắt đầu học JavaScript!",
+      "createdAt": "2024-10-16T10:15:00Z"
+    },
+    {
+      "id": "4",
+      "postId": "4",
+      "author": "Chau Nhat Duy",
+      "content": "Composition API thực sự làm code Vue 3 dễ đọc hơn nhiều.",
+      "createdAt": "2024-11-03T09:20:00Z"
+    },
+    {
+      "id": "5",
+      "postId": "2",
+      "author": "Alex Doe",
+      "content": "Mình đã theo hướng dẫn này và cảm thấy tự tin hơn rất nhiều!",
+      "createdAt": "2024-10-19T16:30:00Z"
+    },
+    {
+      "id": "6",
+      "postId": "5",
+      "author": "Cam Tien",
+      "content": "Security tips rất thực tế, đã áp dụng vào project của team.",
+      "createdAt": "2024-11-06T11:45:00Z"
+    },
+    {
+      "id": "2778",
+      "postId": "5",
+      "author": "Nhat Duy",
+      "content": "123123",
+      "createdAt": "2025-12-08T17:39:49.819Z"
+    },
+    {
+      "id": "dc0f",
+      "postId": "5",
+      "author": "Nhat Duy",
+      "content": "rất hay",
+      "createdAt": "2025-12-08T17:40:14.221Z"
+    },
+    {
+      "id": "666e",
+      "postId": "8",
+      "author": "duy",
+      "content": "duy",
+      "createdAt": "2025-12-09T00:38:51.387Z"
+    },
+    {
+      "id": "1070",
+      "postId": null,
+      "author": "đuy",
+      "content": "duy",
+      "createdAt": "2025-12-09T01:19:52.103Z"
+    },
+    {
+      "id": "b9df",
+      "postId": null,
+      "author": "duy",
+      "content": "duy\n",
+      "createdAt": "2025-12-09T01:27:25.417Z"
+    },
+    {
+      "id": "0121",
+      "postId": "2",
+      "author": "Duy",
+      "content": "thiẹc",
+      "createdAt": "2025-12-09T01:31:12.580Z"
+    },
+    {
+      "id": "47e6",
+      "postId": "10",
+      "author": "",
+      "content": "duy",
+      "createdAt": "2025-12-09T01:44:36.165Z"
+    },
+    {
+      "id": "4399",
+      "postId": "4",
+      "author": "",
+      "content": "binh",
+      "createdAt": "2025-12-09T01:52:25.673Z"
+    },
+    {
+      "id": "5b15",
+      "postId": "4",
+      "author": "",
+      "content": "duy",
+      "createdAt": "2025-12-09T01:52:45.821Z"
+    },
+    {
+      "id": "a520",
+      "postId": "4",
+      "author": "",
+      "content": "duy",
+      "createdAt": "2025-12-09T01:54:44.097Z"
+    },
+    {
+      "id": "e5cc",
+      "postId": "4",
+      "author": "",
+      "content": "duy",
+      "createdAt": "2025-12-09T01:54:57.048Z"
+    },
+    {
+      "id": "3813",
+      "postId": "1",
+      "author": "",
+      "content": "binh",
+      "createdAt": "2025-12-09T01:55:07.245Z"
+    },
+    {
+      "id": "663f",
+      "postId": "4",
+      "author": "Nhat Duy",
+      "content": "Duy",
+      "createdAt": "2025-12-13T04:27:17.521Z"
+    }
+  ]
+}
