@@ -17,16 +17,6 @@
 
 > Nền tảng blog hiện đại với Vue 3 và Supabase: CRUD bài viết, xác thực người dùng, hệ thống bình luận, quản lý profile và phân quyền admin.
 
-### 🏠 Trang chủ
-
-- Đang phát triển
-
-### ✨ Demo
-
-- Đang phát triển
-
----
-
 ## Tính năng
 
 - 🔐 **Xác thực người dùng** - Đăng ký và đăng nhập bằng email/password
