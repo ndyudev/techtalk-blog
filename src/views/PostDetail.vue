@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import axios from "axios";
+import { postService, commentService } from "@/config/api-service";
 import { toast } from "vue-sonner";
 
 const route = useRoute();
@@ -25,19 +25,16 @@ const checkAdmin = () => {
 
 const fetchPost = async () => {
   try {
-    const response = await axios.get(`http://localhost:3000/posts/${postId}`);
-    post.value = response.data;
+    post.value = await postService.getById(postId);
   } catch (error) {
     console.error(error);
+    toast.error("Không thể tải bài viết!");
   }
 };
 
 const fetchComments = async () => {
   try {
-    const response = await axios.get(
-      `http://localhost:3000/comments?postId=${postId}`
-    );
-    comments.value = response.data;
+    comments.value = await commentService.getByPostId(postId);
   } catch (error) {
     console.error(error);
   }
@@ -63,11 +60,10 @@ const handleAddComment = async () => {
   }
 
   try {
-    await axios.post("http://localhost:3000/comments", {
-      postId: postId,
+    await commentService.create({
+      post_id: postId,
       author: authorName,
       content: newComment.value.content,
-      createdAt: new Date().toISOString(),
     });
     toast.success("Thêm bình luận thành công!");
     newComment.value.author = "";
@@ -80,15 +76,18 @@ const handleAddComment = async () => {
 };
 
 const handleDelete = async () => {
+  if (!confirm("Bạn có chắc chắn muốn xóa bài viết này?")) {
+    return;
+  }
   try {
-    await axios.delete(`http://localhost:3000/posts/${postId}`);
-    toast.success("Xóa thành công!");
+    await postService.delete(postId);
+    toast.success("Xóa bài viết thành công!");
     setTimeout(() => {
       router.push("/");
     }, 500);
   } catch (error) {
     console.error("Lỗi", error);
-    toast.error("Lỗi xóa bài viết");
+    toast.error("Lỗi xóa bài viết!");
   }
 };
 
@@ -129,7 +128,10 @@ onMounted(() => {
             {{ post.title }}
           </h2>
           <p class="text-muted small mb-4">
-            By {{ post.author }} • {{ post.createdAt }}
+            By {{ post.author_name }} •
+            <span v-if="post.created_at">
+              {{ new Date(post.created_at).toLocaleString("vi-VN") }}
+            </span>
           </p>
 
           <div class="ratio ratio-16x9 mb-4">
@@ -180,7 +182,9 @@ onMounted(() => {
                 <div class="flex-grow-1">
                   <div class="d-flex justify-content-between">
                     <strong>{{ comment.author }}</strong>
-                    <small class="text-muted">{{ comment.createdAt }}</small>
+                    <small class="text-muted">
+                      {{ new Date(comment.created_at).toLocaleString("vi-VN") }}
+                    </small>
                   </div>
                   <small class="text-muted">{{ comment.content }}</small>
                 </div>

@@ -98,7 +98,7 @@
 <script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-import axios from "axios";
+import { postService } from "@/config/api-service";
 import { toast } from "vue-sonner";
 
 const router = useRouter();
@@ -110,20 +110,16 @@ const content = ref("");
 
 const handleCreatePost = async () => {
   try {
-    const newPost = {
+    await postService.create({
       title: title.value,
-      author: author.value,
+      author_name: author.value,
       content: content.value,
       image:
         image.value ||
         "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800",
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
-    };
+    });
 
-    await axios.post("http://localhost:3000/posts", newPost);
-
-    toast.success("Đăng thành công!");
+    toast.success("Đăng bài viết thành công!");
 
     // Reset form
     author.value = "";
@@ -136,7 +132,7 @@ const handleCreatePost = async () => {
     }, 500);
   } catch (error) {
     console.error(error);
-    toast.error("Đăng bài lỗi");
+    toast.error("Lỗi khi đăng bài!");
   }
 };
 </script>

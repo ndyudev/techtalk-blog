@@ -166,7 +166,7 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import axios from "axios";
+import { userService } from "@/config/api-service";
 import { toast } from "vue-sonner";
 import { useRouter } from "vue-router";
 
@@ -213,7 +213,7 @@ const handleUpdateProfile = async () => {
       user.value.password = newPassword.value;
     }
 
-    await axios.put(`http://localhost:3000/users/${user.value.id}`, user.value);
+    await userService.update(user.value.id, user.value);
     localStorage.setItem("userLogin", JSON.stringify(user.value));
     toast.success("Cập nhật thành công!");
 
