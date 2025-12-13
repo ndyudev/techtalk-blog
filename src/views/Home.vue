@@ -1,18 +1,19 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import axios from "axios";
 import { useRouter } from "vue-router";
+import { postService } from "@/config/api-service";
+import { toast } from "vue-sonner";
 
 const router = useRouter();
 const posts = ref([]);
 
-// Fetch posts from API
+// Fetch posts from Supabase
 const fetchPosts = async () => {
   try {
-    const response = await axios.get("http://localhost:3000/posts");
-    posts.value = response.data;
+    posts.value = await postService.getAll();
   } catch (error) {
     console.error("Lỗi khi lấy dữ liệu:", error);
+    toast.error("Không thể tải bài viết!");
   }
 };
 
@@ -85,7 +86,7 @@ onMounted(() => {
                     class="d-flex align-items-center border-top pt-2 mt-auto"
                   >
                     <i class="fa-solid fa-user text-muted me-2"></i>
-                    <small class="text-muted">{{ post.author }}</small>
+                    <small class="text-muted">{{ post.author_name }}</small>
                   </div>
                 </div>
               </div>

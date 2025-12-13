@@ -89,7 +89,7 @@
 
 <script setup>
 import { ref } from "vue";
-import axios from "axios";
+import { userService } from "@/config/api-service";
 import { toast } from "vue-sonner";
 import { useRouter } from "vue-router";
 
@@ -97,22 +97,15 @@ const router = useRouter();
 
 const email = ref("");
 const password = ref("");
-const errorMessage = ref("");
 
 const handleLogin = async () => {
-  errorMessage.value = "";
-
   try {
-    const response = await axios.get(
-      `http://localhost:3000/users?email=${email.value}`
-    );
+    const user = await userService.getByEmail(email.value);
 
-    if (response.data.length === 0) {
+    if (!user) {
       toast.error("Email không tồn tại!");
       return;
     }
-
-    const user = response.data[0];
 
     if (user.password !== password.value) {
       toast.error("Mật khẩu không đúng!");
@@ -120,14 +113,14 @@ const handleLogin = async () => {
     }
 
     localStorage.setItem("userLogin", JSON.stringify(user));
-
     toast.success("Đăng nhập thành công!");
 
     setTimeout(() => {
-      router.push("/");
+      window.location.href = "/";
     }, 500);
   } catch (error) {
-    toast.error("Có lỗi xảy ra. Vui lòng thử lại!");
+    console.error(error);
+    toast.error("Email không tồn tại!");
   }
 };
 </script>

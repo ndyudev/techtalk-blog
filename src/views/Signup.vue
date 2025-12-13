@@ -77,7 +77,7 @@
 
 <script setup>
 import { ref } from "vue";
-import axios from "axios";
+import { userService } from "@/config/api-service";
 import { toast } from "vue-sonner";
 
 const name = ref("");
@@ -86,21 +86,20 @@ const password = ref("");
 
 const handleSignup = async () => {
   if (!name.value || !email.value || !password.value) {
-    toast.error("Điền đầy đủ thông tin!");
+    toast.error("Vui lòng điền đầy đủ thông tin!");
     return;
   }
 
   try {
-    const checkEmail = await axios.get(
-      `http://localhost:3000/users?email=${email.value}`
-    );
-    if (checkEmail.data.length > 0) {
-      toast.error("Email tồn tại");
+    // Kiểm tra email đã tồn tại chưa
+    const existingUser = await userService.getByEmail(email.value);
+    if (existingUser) {
+      toast.error("Email đã được sử dụng!");
       return;
     }
 
     // Tạo user mới
-    await axios.post("http://localhost:3000/users", {
+    await userService.create({
       name: name.value,
       email: email.value,
       password: password.value,

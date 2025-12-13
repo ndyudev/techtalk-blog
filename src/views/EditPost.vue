@@ -19,7 +19,7 @@
                   type="text"
                   class="form-control"
                   id="postAuthor"
-                  v-model="post.author"
+                  v-model="post.author_name"
                   placeholder="Nhập tên tác giả..."
                   required
                 />
@@ -96,7 +96,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import axios from "axios";
+import { postService } from "@/config/api-service";
 import { toast } from "vue-sonner";
 
 const route = useRoute();
@@ -105,15 +105,14 @@ const postId = route.params.id;
 
 const post = ref({
   title: "",
-  author: "",
+  author_name: "",
   content: "",
   image: "",
 });
 
 const fetchPost = async () => {
   try {
-    const response = await axios.get(`http://localhost:3000/posts/${postId}`);
-    post.value = response.data;
+    post.value = await postService.getById(postId);
   } catch (error) {
     console.error(error);
     toast.error("Lỗi khi tải bài viết!");
@@ -122,10 +121,7 @@ const fetchPost = async () => {
 
 const handleUpdatePost = async () => {
   try {
-    await axios.put(`http://localhost:3000/posts/${postId}`, {
-      ...post.value,
-      updatedAt: new Date().toISOString(),
-    });
+    await postService.update(postId, post.value);
     toast.success("Cập nhật bài viết thành công!");
     setTimeout(() => {
       router.push(`/post/${postId}`);
